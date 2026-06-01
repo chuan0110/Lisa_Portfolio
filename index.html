@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徐翊媗｜個人作品集</title>
+    <meta name="description" content="徐翊媗的個人作品集網站，展示企劃、影音、視覺設計與手作創作。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="container header-bar">
+            <a class="brand" href="#hero" aria-label="返回首頁">
+                <span class="brand-mark">徐</span>
+                <span>
+                    <strong>徐翊媗</strong>
+                    <small>企劃 / 影音 / 視覺 / 手作</small>
+                </span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="site-nav">
+                <a href="#about">關於我</a>
+                <a href="#portfolio">作品集</a>
+                <a href="#video">影音作品</a>
+                <a href="#contact">聯絡我</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section-pad">
+            <div class="container hero-grid reveal">
+                <div class="hero-copy">
+                    <p class="eyebrow">跨領域創作者</p>
+                    <h1>徐翊媗</h1>
+                    <p class="hero-subtitle">元智大學資訊傳播系三年級設計組。結合企劃、影音、視覺設計與手作實踐，持續把文化、故事與美感轉化成能被看見的作品。</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#portfolio">看作品集</a>
+                        <a class="button button-secondary" href="#contact">聯絡我</a>
+                    </div>
+                    <div class="hero-tags" aria-label="專長標籤">
+                        <span>企劃</span>
+                        <span>影音製作</span>
+                        <span>視覺設計</span>
+                        <span>手作品牌</span>
+                    </div>
+                </div>
+                <div class="hero-portrait-wrap">
+                    <div class="hero-portrait">
+                        <img src="images/profile/lisa_profile.jpg" alt="徐翊媗大頭照" class="hero-portrait__image">
+                    </div>
+                    <div class="hero-note">
+                        <p>擅長把活動、文化與視覺語言整合成一致的內容體驗。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-pad section-surface">
+            <div class="container reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>關於我</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card about-intro">
+                        <p>我喜歡把「想法」變成可以被看見、被參與的內容，從活動企劃、品牌視覺到影音與手作都能投入。平常也持續參與表演、文化活動與校內外專案，讓創作不只停留在作品本身，而是延伸成完整的呈現與溝通。</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>核心能力</h3>
+                        <ul class="skill-list">
+                            <li><span>企劃與執行</span><strong>專案統整、活動流程、現場協調</strong></li>
+                            <li><span>視覺與影像</span><strong>海報設計、剪輯、品牌圖像</strong></li>
+                            <li><span>創作與表演</span><strong>舞台表演、原民文化表達、手作品牌</strong></li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h3>經歷亮點</h3>
+                        <ul class="timeline-list">
+                            <li>2025 桃園燈會視覺設計《祈豐年》</li>
+                            <li>第五屆桃園市民學藝員</li>
+                            <li>元智大學原住民族青年社社長</li>
+                            <li>思傑夢想 AED 公司影片剪輯</li>
+                            <li>街頭表演與駐唱經驗</li>
+                            <li>手作品牌「即編」經營</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-pad">
+            <div class="container reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">Portfolio</p>
+                    <h2>作品集分類</h2>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <article class="portfolio-card" data-portfolio-key="art">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">art</span>
+                            <h3>大學期間參與過的藝術作品</h3>
+                            <p>以插畫、電繪與藝術發想為主的創作整理。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-art">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="cultural">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">cultural</span>
+                            <h3>元智大學原住民族青年社活動</h3>
+                            <p>活動紀錄、文化推廣與社團形象照片。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-cultural">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="curator">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">curator</span>
+                            <h3>小導演與學藝員經驗</h3>
+                            <p>策展、導覽、展場與學習型活動的紀錄。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-curator">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="latern_festival">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">latern_festival</span>
+                            <h3>2025 桃園燈會經驗</h3>
+                            <p>燈會專案中的視覺與現場參與畫面。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-latern_festival">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="performance">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">performance</span>
+                            <h3>街頭表演、演戲與 MV 經驗</h3>
+                            <p>以表演和影像為主的現場與舞台紀錄。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-performance">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="phone_strap">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">phone_strap</span>
+                            <h3>手作品牌「即編」</h3>
+                            <p>編織手機吊繩與品牌商品展示。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-phone_strap">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-portfolio-key="poster">
+                        <div class="portfolio-card__meta">
+                            <span class="portfolio-badge">poster</span>
+                            <h3>原青社原民週海報主視覺</h3>
+                            <p>主視覺與延伸海報系列整理。</p>
+                        </div>
+                        <div class="swiper portfolio-swiper" id="swiper-poster">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section-pad section-surface">
+            <div class="container reveal">
+                <div class="section-heading center">
+                    <p class="eyebrow">Video</p>
+                    <h2>影音作品</h2>
+                </div>
+
+                <div class="video-feature">
+                    <div class="video-feature__media">
+                        <div class="video-fallback">
+                            <p>若播放器無法直接載入，請改用下方連結觀看。</p>
+                            <a class="video-fallback__button" href="https://youtu.be/ZqBblsa5nas?si=lOaxW0GR35TqUEu8" target="_blank" rel="noreferrer">在 YouTube 開啟影片</a>
+                        </div>
+                        <iframe
+                            src="https://www.youtube.com/embed/ZqBblsa5nas"
+                            title="思傑夢想 AED 公司剪輯影片"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-feature__meta">
+                        <span class="portfolio-badge">剪映CapCut / 剪輯</span>
+                        <h3>思傑夢想 AED 公司剪輯影片</h3>
+                        <p>這支影片整理了我在思傑夢想 AED 公司參與剪輯的內容，包含節奏控制、畫面銜接與資訊呈現。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-pad section-surface">
+            <div class="container reveal">
+                <div class="section-heading center">
+                    <p class="eyebrow">Contact</p>
+                    <h2>聯絡我</h2>
+                    <p class="section-desc">如果你想合作企劃、設計、影音或手作專案，可以直接從以下方式聯絡。</p>
+                </div>
+                <div class="contact-card">
+                    <a href="https://www.instagram.com/lisa940106/" target="_blank" rel="noreferrer" class="contact-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>IG：Lisa940106</span>
+                    </a>
+                    <a href="https://line.me" target="_blank" rel="noreferrer" class="contact-item">
+                        <i class="fa-brands fa-line"></i>
+                        <span>LINE：45041780</span>
+                    </a>
+                    <a href="tel:0908255501" class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>電話：0908-255-501</span>
+                    </a>
+                    <a href="mailto:Lisa45041780@gmail.com" class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email：Lisa45041780@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox / Modal for portfolio preview -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox__overlay" data-action="close"></div>
+        <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="作品檢視">
+            <button class="lightbox__close" id="lightbox-close" aria-label="關閉視窗">×</button>
+            <div class="lightbox__content">
+                <div class="lightbox__media">
+                    <img id="lightbox-image" src="" alt="">
+                </div>
+                <aside class="lightbox__meta" aria-labelledby="lightbox-title">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-caption"></p>
+                    <div id="lightbox-detail" class="lightbox__detail"></div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

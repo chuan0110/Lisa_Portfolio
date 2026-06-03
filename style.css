@@ -691,7 +691,7 @@ img {
 
 .lightbox__dialog {
     position: relative;
-    max-width: min(1100px, calc(100% - 3rem));
+    max-width: min(1300px, calc(100% - 3rem));
     width: 100%;
     margin: 1.2rem;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 250, 243, 0.98));
@@ -717,7 +717,7 @@ img {
 
 .lightbox__content {
     display: grid;
-    grid-template-columns: 1fr 420px;
+    grid-template-columns: 1fr 520px;
     gap: 0;
 }
 
